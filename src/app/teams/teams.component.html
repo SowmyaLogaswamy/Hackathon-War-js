@@ -4,3 +4,4 @@
 <div *ngFor="let squad of squads | async" (click) = "goToDetailPage(squad)" class="panel panel-success" id ="demo">
   <div class="panel-heading"><h3>{{squad.name}}</h3></div>
     <div class="panel-body" >{{squad.description}}</div>
+  </div>   

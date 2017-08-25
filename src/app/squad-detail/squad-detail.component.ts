@@ -11,17 +11,17 @@ import { SquadService } from '../squad.service';
   providers: [SquadService]
 })
 export class SquadDetailComponent implements OnInit {
-  squadId: number = null;
-  squadToDisplay: Squad;
+  squadId: string;
+  squadToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private squadService: SquadService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.squadId = parseInt(urlParameters['id']);
+      this.squadId = urlParameters['id'];
     });
 
-    this.squadToDisplay = this.squadService.getSquadById(this.squadId);
+   this.squadToDisplay = this.squadService.getSquadById(this.squadId);
   }
 
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Squad } from './squad.model';
-import { SQUADS } from './mock-squads';
+//import { SQUADS } from './mock-squads';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -14,13 +14,12 @@ export class SquadService {
   getSquads() {
      return this.squads;
   }
+  addSquad(newSquad: Squad) {
+   this.squads.push(newSquad);
+ }
 
-  getSquadById(squadId: number){
-    for (var i = 0; i <= SQUADS.length - 1; i++) {
-      if (SQUADS[i].id === squadId) {
-        return SQUADS[i];
-      }
-    }
+  getSquadById(squadId: string){
+    return this.database.object('squads/' + squadId);
   }
 
 }

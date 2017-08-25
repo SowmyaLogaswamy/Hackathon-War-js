@@ -19,7 +19,7 @@ export class TeamsComponent implements OnInit {
     this.squads = this.squadService.getSquads();
   }
 
-  goToDetailPage(clickedSquad: Squad) {
-    this.router.navigate(['squads', clickedSquad.id]);
+  goToDetailPage(clickedSquad) {
+    this.router.navigate(['squads', clickedSquad.$key]);
   };
 }

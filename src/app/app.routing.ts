@@ -4,18 +4,17 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { TeamsComponent }   from './teams/teams.component';
 import { SquadDetailComponent }   from './squad-detail/squad-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
       path: '',
       component: WelcomeComponent
     },
-
     {
       path: 'about',
       component: AboutComponent
     },
-
     {
       path: 'teams',
       component: TeamsComponent
@@ -23,6 +22,10 @@ const appRoutes: Routes = [
     {
     path: 'squads/:id',
     component: SquadDetailComponent
+    },
+    {
+      path: 'admin',
+      component: AdminComponent
     }
 ];
 
