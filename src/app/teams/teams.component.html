@@ -1,2 +1,7 @@
 <h2> Teams </h2>
 <h4> Here are the teams participationg in the Hackathon-War </h4>
+
+<div *ngFor="let squad of squads">
+    <h3><strong>{{squad.name}}</strong> <br>
+       {{squad.description}}</h3>
+</div>
