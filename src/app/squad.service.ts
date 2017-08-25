@@ -22,4 +22,10 @@ export class SquadService {
     return this.database.object('squads/' + squadId);
   }
 
+  updateSquad(localUpdatedSquad){
+    var albumEntryInFirebase = this.getSquadById(localUpdatedSquad.$key);
+    albumEntryInFirebase.update({name: localUpdatedSquad.name,
+                                description: localUpdatedSquad.description});
+  }
+
 }
