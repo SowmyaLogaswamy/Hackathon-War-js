@@ -1,28 +1,93 @@
-# HackathonWar
+<img src="http://www.scrum-tips.com/wp-content/uploads/2016/07/HACKATHON.png" align="right" height="100" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+# Hackathon-War
 
-## Development server
+#### _JavaScript - Week4 independent project in Angular2, 08/18/2017_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### By _**Sowmya Devi Logaswamy**_
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Hackathon-war is an application that manages the teams participated in the hackathon event.
 
-## Build
+## Planning
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Specs
+* Spec 1: User wants to visit a page to see a list of all teams.
+* Spec 2: User wants to click a team in the list to visit their profile page, which should include more details about them.
+* Spec 3: User wants to have an option to visit an "About" page that explains what the event is, and what they do.
+* Spec 4: User wants all data persisted in a database, so it's always there when I need it.
+* Spec 5: Administrator wants to add new teams to the event. (User authentication is not required).
+* Spec 6: Administrator wants to edit user profiles, in case I make a mistake, or need to update their details.
+* Spec 7: Administrator needs the option to delete a user, in case they leave the club or team.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Future functionalities
+  * Add a message board area, where team members may chat with each other.
+  * Include an area called "announcements", "events", "games", etc. where users can post what events, matches, or meetings the club has planned.
+  * User may filter the list of users by their particular role in the group, or some other information/category.
 
-## Running end-to-end tests
+  ## Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+  You will need the following things properly installed on your computer.
 
-## Further help
+  * [Git](https://git-scm.com/)
+  * [Node.js](https://nodejs.org/) (with NPM)
+  * [Angular](https://angularjs.org/)
+  * [PhantomJS](http://phantomjs.org/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  ### Setup/Installation Requirements
+
+  * _In the command line, run:_
+  ```
+  git clone https://github.com/SowmyaLogaswamy/Hackathon-War-js.git
+  cd Hackathon-War-js
+  npm install
+  bower install
+
+  ```
+  * _Create a Firebase Database and add your API key credentials here:_
+  ```
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+
+  ```
+  * _In the command line, run:_
+  ```
+  ng serve
+  ```
+  * _Then, in any modern browser, navigate to:_
+  ```
+  localhost:4200
+  ```
+
+
+### Known Bugs
+
+No known bugs yet.
+
+## Technologies Used
+
+HTML
+
+CSS
+
+Bootstrap
+
+TypeScript
+
+Angular.js
+
+Node js
+
+Firebase
+
+
+### License
+
+*MIT*
+
+Copyright (c) 2017 **_Sowmya Devi Logaswamy_**
