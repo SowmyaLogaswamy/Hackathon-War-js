@@ -3,9 +3,9 @@
 <label>New Team Name:</label>
 <input [(ngModel)]="selectedSquad.name">
 <br>
-
+<br>
 <label>New Team Description:</label>
-<input [(ngModel)]="selectedSquad.description">
+<textarea [(ngModel)]="selectedSquad.description"></textarea>
 
 
 <button (click)="beginUpdatingSquad(selectedSquad)">Update</button>

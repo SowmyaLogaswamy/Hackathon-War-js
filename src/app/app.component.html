@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id ="top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Hackathon-War</a>
@@ -10,15 +10,15 @@
   </div>
 </nav>
 
-<div class="container">
-  <div class="jumbotron">
+<div class="container" ng-style="{'background-color':blue}">
+  <div class="jumbotron" id="header">
   <h1>{{title}}</h1>
 </div>
   <router-outlet></router-outlet>
 </div>
 
-<footer class="footer">
-  <div class="container">
+<footer class="footer" id = "footer">
+  <div class="container" id ="subfooter">
     <a class="text-muted" routerLink="admin">Admin</a>
   </div>
 </footer>

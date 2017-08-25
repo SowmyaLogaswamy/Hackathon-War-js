@@ -6,3 +6,38 @@
   background-color: #f5f5f5;
   padding: 10px;
 }
+
+
+.container {
+  cursor: pointer;
+  border: 2px black;
+  display: block;
+  color: #4b5729;
+  background-color: #5b9291;
+
+}
+
+#header {
+  background-color: #bbc9a5;
+  text-align: center;;
+}
+
+
+#top {
+  background-color: #94bfac;
+}
+
+
+#footer
+{
+  background-color: #94bfac;
+}
+
+#subfooter {
+  background-color: #94bfac;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
