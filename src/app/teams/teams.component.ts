@@ -1,36 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Squad } from '../squad.model';
+import { Router } from '@angular/router';
+import { SquadService } from '../squad.service';
 
 @Component({
   selector: 'app-teams',
   templateUrl: './teams.component.html',
-  styleUrls: ['./teams.component.css']
+  styleUrls: ['./teams.component.css'],
+  providers: [SquadService]
 })
 export class TeamsComponent implements OnInit {
+  squads: Squad[];
 
-  squads: Squad[] = [
-    new Squad("Hacking Squad",
-       "It is a team with passionate hacker cum coders", 1),
-   new Squad("Bits Magnet",
-      "It is a team with passionate hacker cum coders", 2),
-  new Squad("Jammers",
-     "It is a team with passionate hacker cum coders", 3),
-
-
-
-
-
-
-
-
-
-
-
-  ];
-
-  constructor() { }
+  constructor(private router: Router, private squadService: SquadService) { }
 
   ngOnInit() {
+    this.squads = this.squadService.getSquads();
   }
 
+  goToDetailPage(clickedSquad: Squad) {
+    this.router.navigate(['squads', clickedSquad.id]);
+  };
 }
