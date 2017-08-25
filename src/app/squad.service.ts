@@ -23,9 +23,15 @@ export class SquadService {
   }
 
   updateSquad(localUpdatedSquad){
-    var albumEntryInFirebase = this.getSquadById(localUpdatedSquad.$key);
-    albumEntryInFirebase.update({name: localUpdatedSquad.name,
+    var squadEntryInFirebase = this.getSquadById(localUpdatedSquad.$key);
+    squadEntryInFirebase.update({name: localUpdatedSquad.name,
                                 description: localUpdatedSquad.description});
+  }
+
+
+  deleteSquad(localSquadToDelete){
+    var squadEntryInFirebase = this.getSquadById(localSquadToDelete.$key);
+    squadEntryInFirebase.remove();
   }
 
 }
