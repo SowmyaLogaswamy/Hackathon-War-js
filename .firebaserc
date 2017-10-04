@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "hackathon-wars",
+    "hackathon-war": "hackathon-wars"
+  }
+}
